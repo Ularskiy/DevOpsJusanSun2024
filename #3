@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Указание ключевого слова
+keyword="kluchevoe_slovo"
+
+# Поиск файлов, содержащих искомое слово
+grep -rl "$keyword" .
