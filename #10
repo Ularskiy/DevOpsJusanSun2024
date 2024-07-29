@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Обновление пакетов
+sudo apt-get update
+
+# Обновление скаченных пакетов
+sudo apt-get -y upgrade
