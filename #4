@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Создание архива из файлов и директорий
+tar -cvf archive.tar file1 file2 directory1
+
+# Распаковка архива
+tar -xvf archive.tar
+
+# Проверка восстановленных файлов
+ls
