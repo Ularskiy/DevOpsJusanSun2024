@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Указание директории для бэкапа
+backup_source="directory_to_backup"
+backup_target="backup_directory"
+
+# Создание резервной копии с датой в имени файла
+backup_file="$backup_target/backup_$(date +%Y%m%d).tar.gz"
+tar -czvf "$backup_file" "$backup_source"
+
+# Добавление задачи в crontab для выполнения каждую неделю
+(crontab -l ; echo "0 0 * * 0 /path/to/backup_script.sh") | crontab -
