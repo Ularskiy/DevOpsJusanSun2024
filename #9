@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Подсчет количества файлов и директорий в текущей директории
+file_count=$(ls -l | grep -v '^d' | wc -l)
+dir_count=$(ls -l | grep '^d' | wc -l)
+
+# Вывод результатов
+echo "Количество файлов: $file_count"
+echo "Количество директорий: $dir_count"
