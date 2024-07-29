@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Генерация рандомного пароля заданной длины
+length=12
+password=$(tr -dc A-Za-z0-9 </dev/urandom | head -c $length)
+
+# Сохранение пароля в файл
+echo "$password" > password.txt
