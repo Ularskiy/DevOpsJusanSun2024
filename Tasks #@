@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Исходная и целовая директория
+source_dir="source_directory"
+target_dir="target_directory"
+
+# Копирование всех .txt файлов из исх.директории в целевую
+cp "$source_dir"/*.txt "$target_dir"
+
+# Вывод списка скопированных файлов
+ls "$target_dir"/*.txt
